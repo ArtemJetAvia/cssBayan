@@ -1,0 +1,107 @@
+body {
+    background-color: #F6F6EC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.container {    
+    box-sizing: content-box;
+    display: block;    
+    margin: 0 auto;
+    max-width: 40em;
+    padding: 0;  
+    cursor: pointer;  
+}
+
+ .meme input {
+   display: none; 
+} 
+
+.acordion:hover .meme label .fa-plus {
+    display: block;
+ }
+ .acordion:hover .meme label .fa-xmark {
+     display: none;
+  } 
+
+  .acordion:hover .meme :checked label .fa-xmark {
+    display: block;
+} 
+.meme {
+    background-color: #F6F6EC;     
+    margin: 0 auto;
+    padding: 1em 0em 1em 0em;
+    border-top: 0.1em solid;
+    border-color: #d8d8b8;
+    
+}
+
+.tab-label {    
+    cursor: pointer;  
+    color: blue; 
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+    justify-content: space-between;   
+    margin: 0 auto;
+    position: static;
+}
+
+.acordion:hover .tab-label {
+    color: black; 
+}
+
+
+.acordion:hover i {
+   display: block;
+}
+
+.tab-label i {
+    display: none;
+}
+
+img {
+    margin: 0 auto;
+    padding: 1em 0em 0em 0em;
+    width: 0%;
+    height: 0%;   
+}
+
+ .meme :checked + .tab-label {
+    background: #F6F6EC;
+    color: black;
+}
+
+
+
+.meme :checked ~ img {
+    display: block;
+    width: 50%;
+    transition: all 3s;
+} 
+
+  .meme:hover img {
+    display: block;
+    width: 50%;
+    transition: all 3s;
+}  
+
+ .acordion .meme:hover label  .fa-plus {
+    display: none;
+ }
+
+ .acordion .meme:hover label  .fa-xmark {
+    display: block;
+ } 
+
+ 
+
+ .meme :checked ~.tab-label i.fa-xmark{
+    display: block;
+}
+
+.meme :checked ~.tab-label i.fa-plus{
+    display: none;
+}
