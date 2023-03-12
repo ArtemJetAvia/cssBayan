@@ -105,3 +105,30 @@ img {
 .meme :checked ~.tab-label i.fa-plus{
     display: none;
 }
+
+
+
+
+
+@media (max-device-width: 810px) {
+    h1 {
+      font-size: 1em;   
+  }
+  .container {    
+      max-width: 18em;    
+  }
+     .tab-label {
+      font-size: 1em;   
+  }
+  }
+  
+  @media (min-device-width: 810px) {
+      h1 {
+      font-size: 2em;   
+  }
+     .tab-label {
+      font-size: 1.2em;
+  }
+  
+  }
+  
